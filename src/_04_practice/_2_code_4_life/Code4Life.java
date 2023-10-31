@@ -15,8 +15,22 @@ public class Code4Life {
 	 * *****************/
 	static boolean canPlaySounds = true;
 	
+	public static void main(String[] args) {
+
+		int hours = Integer.parseInt(JOptionPane.showInputDialog("How many hours of coding did you do this week?"));
+		
+		if (hours <= 2) {
+			JOptionPane.showMessageDialog(null, "Code More / YouTube Less");
+		} else if (hours >= 3 && hours <= 5) {
+			JOptionPane.showMessageDialog(null, "You are a code ninja");
+		} else {
+			playBatmanTheme();
+			displayBatman();
+		}
 	
+	}
 	// 1. Ask the user how many hours they spent coding this week.
+	
 
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
